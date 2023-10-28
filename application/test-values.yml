@@ -1,0 +1,13 @@
+---
+istioTrafficVersion: v1
+image:
+  repository: "docker pull nginx"
+  tag: "latest"
+  pullPolicy: Always
+
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 80
+  targetMemoryUtilizationPercentage: 80

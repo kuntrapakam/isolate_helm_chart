@@ -5,7 +5,8 @@
 replicaCount: 2
 
 image:
-  repository: docker pull ryadavk/sample:1.0.0 # update this with ECR
+  repository: docker pull nginx # update this with ECR
+  tag: latest
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
 
